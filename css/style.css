@@ -219,3 +219,26 @@ iframe {
     padding: 20px;
     margin-bottom: 100px;
 }
+.card-suporte{
+    margin-top: 50px;
+    border: solid black 1px;
+    display: flex;
+    width: 1700px;
+    justify-self: center
+}
+.contatos{
+    background-color: #4b4b4b;
+    width: auto;
+}
+.enviar-msg{
+    width: auto;
+    background-color: white;
+}
+.btn-enviarmsg{
+    background-color: #ff4800;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border: none;
+}
+
