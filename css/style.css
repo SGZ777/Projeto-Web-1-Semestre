@@ -60,7 +60,7 @@ nav li {
 .txt-quem-somos {
     margin-top: 100px;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     background-color: #ff4800;
     margin-bottom: 0px;
@@ -90,9 +90,9 @@ nav li {
 }
 
 .txt-promocao-home {
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -103,16 +103,17 @@ nav li {
 .produto {
     background-color: #ffffff;
     width: 350px;
-    height: 430px;
+    height: 420px;
     border-radius: 20px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.2);
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding: 10px;
 }
 
 .produto img {
-    width: 320px;
+    width: 300px;
     align-items: center;
     margin-top: 30px;
     display: block;
@@ -192,7 +193,7 @@ iframe {
 .btn-footer-suporte {
      width: 200px;
     height: 50px;
-    font-size: 22px;
+    font-size: 18px;
     border-radius: 10px;
     border: none;
     background-color: #ff4800;
@@ -207,4 +208,14 @@ iframe {
     gap: 10px;
     padding-top: 40px;
     justify-self: center;
+}
+.section-produtos{
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+}
+.ultima-section-produtos{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 100px;
 }
