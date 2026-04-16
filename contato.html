@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icons/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 
 <body>
 
-     <header>
+    <header>
         <div class="divHeader">
             <img class="logo-header" src="img/logo.png">
             <nav class="nav-header">
@@ -35,16 +35,127 @@
         </div>
     </header>
 
-    <img src="img/banner-contato.png" class="banner-contato">
+    <main class="contato-page">
+        <section class="hero-contato">
+            <img src="img/banner-contato.png" class="banner-contato" alt="Fones e caixas de som JBL">
+            
+        </section>
 
-    <section class="card-suporte"></section>
-    
-    <section class="mapa">
+        <section class="contato-destaques">
+            <article class="card-suporte">
+                <div class="icone-suporte">01</div>
+                <h2>E-mail</h2>
+                <p>Resposta para dúvidas gerais, suporte e pós-venda.</p>
+                <a href="mailto:suporte@jbl.com">suporte@jbl.com</a>
+            </article>
+
+            <article class="card-suporte">
+                <div class="icone-suporte">02</div>
+                <h2>Telefone</h2>
+                <p>Atendimento de segunda a sexta, das 9h às 18h.</p>
+                <a href="tel:+551140028922">(11) 4002-8922</a>
+            </article>
+
+            <article class="card-suporte">
+                <div class="icone-suporte">03</div>
+                <h2>Redes sociais</h2>
+                <p>Novidades, lançamentos e contato rápido pelos canais oficiais.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram JBL">
+                        <img src="img/logo-instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" aria-label="X JBL">
+                        <img src="img/x-logo.png" alt="X">
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <section class="contato-conteudo">
+            <div class="formulario-contato">
+                <p class="contato-section-kicker">Atendimento personalizado</p>
+                <h2>Conta pra gente o que você precisa</h2>
+                <p class="formulario-intro">Preencha os campos abaixo e nossa equipe retorna o mais rapido possivel.</p>
+
+                <form class="contato-form">
+                    <div class="grupo-campos">
+                        <div class="campo-form">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="voce@email.com">
+                        </div>
+                    </div>
+
+                    <div class="grupo-campos">
+                        <div class="campo-form">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Ex: dúvida sobre um produto">
+                        </div>
+
+                        <div class="campo-form">
+                            <label for="pedido">Pedido</label>
+                            <input type="text" id="pedido" name="pedido" placeholder="Opcional">
+                        </div>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6"
+                            placeholder="Escreva sua dúvida, sugestão ou solicitação."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-contato">Enviar mensagem</button>
+                </form>
+            </div>
+
+            <aside class="painel-contato">
+                <div class="painel-box">
+                    <p class="contato-section-kicker">Central JBL</p>
+                    <h2>Estamos prontos para te ouvir</h2>
+                    <p>Se preferir, use um dos canais diretos para falar com nosso time.</p>
+                </div>
+
+                <div class="painel-info">
+                    <h3>Suporte tecnico</h3>
+                    <p>Orientações sobre configuração, garantia e funcionamento dos produtos.</p>
+                </div>
+
+                <div class="painel-info">
+                    <h3>Parcerias comerciais</h3>
+                    <p>Consultas para eventos, revenda e projetos especiais com a marca.</p>
+                </div>
+
+             
+            </aside>
+        </section>
+
+        <section class="mapa">
+            <div class="mapa-texto">
+                <p class="contato-section-kicker">Endereco de referência</p>
+                <h2>Nossa sede</h2>
+            </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105565.22308124542!2d-118.65264510273437!3d34.225234100000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29a117d48ef25%3A0x5bbb1fb6cdb1cd5c!2sJBL%20Professional!5e0!3m2!1spt-BR!2sbr!4v1772755146936!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
+    </main>
+
+    <footer>
+        <img src="img/JBL-Logo.png" class="logo-footer" alt="Logo JBL">
+
+        <div class="alinhar-suporte-footer">
+            <p class="txt-suporte">Precisa de suporte?</p>
+            <input class="input-footer-suporte" type="text" placeholder="Escreva sua duvida/sugestao">
+            <button class="btn-footer-suporte">Enviar</button>
+        </div>
+       <p class="copyright-footer">@2026 Copyright JBL</p>
+    </footer>
 
 </body>
 

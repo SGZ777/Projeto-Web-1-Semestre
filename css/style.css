@@ -144,6 +144,7 @@ nav li {
     color: rgb(255, 255, 255);
     width: 250px;
     height: 50px;
+    font-weight: bold;
     border-radius: 25px;
     margin-top: 20px;
     justify-self: center;
@@ -199,8 +200,9 @@ iframe {
 .btn-footer-suporte {
      width: 200px;
     height: 50px;
+    font-weight: bold;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 25px;
     border: none;
     background-color: #ff4800;
     color: white;
@@ -227,12 +229,349 @@ iframe {
 }
 .banner-contato{
     width: 100%;
+    display: block;
+    height: 520px;
+    object-fit: cover;
 }
-.card-suporte{
-    width: 800px;
-    height: 400px;
-    justify-self: center;
-    margin-top: 30px;
-    border-radius: 20px;
-    background-color: white;
+
+.contato-page {
+    padding-top: 90px;
+}
+
+.hero-contato {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-contato-kicker,
+.contato-section-kicker {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff4800;
+    margin-bottom: 10px;
+}
+
+.hero-contato-titulo {
+    font-size: 54px;
+    line-height: 1.05;
+    margin: 0 0 18px;
+}
+
+.hero-contato-texto {
+    font-size: 21px;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 540px;
+}
+
+.contato-destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 50px 8%;
+    margin-top: -70px;
+    position: relative;
+    z-index: 2;
+}
+
+.card-suporte {
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 26px;
+    padding: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(10px);
+    min-height: 230px;
+}
+
+.icone-suporte {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    background-color: #ff4800;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.card-suporte h2,
+.formulario-contato h2,
+.painel-box h2,
+.mapa-texto h2 {
+    font-size: 30px;
+    margin: 0 0 12px;
+}
+
+.card-suporte p,
+.formulario-intro,
+.painel-box p,
+.painel-info p,
+.mapa-texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2f2f2f;
+}
+
+.card-suporte a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #ff4800;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.social-links {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.social-links a {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background-color: #ff4800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.contato-conteudo {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, 0.9fr);
+    gap: 28px;
+    padding: 10px 8% 40px;
+}
+
+.formulario-contato,
+.painel-contato,
+.mapa {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 28px;
+    box-shadow: 0 22px 42px rgba(0, 0, 0, 0.12);
+}
+
+.formulario-contato {
+    padding: 38px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.grupo-campos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-form label {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.campo-form input,
+.campo-form textarea {
+    border: 1px solid #d2d2d2;
+    border-radius: 16px;
+    padding: 16px 18px;
+    font-family: "Oxanium", sans-serif;
+    font-size: 16px;
+    background-color: #fcfcfc;
+}
+
+.campo-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.btn-contato {
+    width: fit-content;
+    min-width: 220px;
+    height: 54px;
+    border: none;
+    border-radius: 999px;
+    background-color: #ff4800;
+    color: white;
+    font-family: "Oxanium", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.painel-contato {
+    background: linear-gradient(180deg, #151515 0%, #262626 100%);
+    color: white;
+    padding: 38px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.painel-box p,
+.painel-info p,
+.destaque-prazo span {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.painel-info {
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 18px;
+}
+
+.painel-info h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.destaque-prazo {
+    margin-top: auto;
+    background: rgba(255, 72, 0, 0.18);
+    border: 1px solid rgba(255, 72, 0, 0.35);
+    border-radius: 22px;
+    padding: 22px;
+}
+
+.destaque-prazo span {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.destaque-prazo strong {
+    font-size: 28px;
+}
+
+.mapa {
+    margin: 0 8% 40px;
+    padding: 34px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 420px;
+    padding: 0;
+    border-radius: 24px;
+}
+
+.mapa-texto {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .contato-destaques,
+    .contato-conteudo,
+    .grupo-campos {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-contato-titulo {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-header {
+        padding-top: 12px;
+    }
+
+    .nav-header {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    header {
+        height: 130px;
+    }
+
+    .contato-page {
+        padding-top: 130px;
+    }
+
+    .banner-contato {
+        height: 600px;
+    }
+
+    .hero-contato-overlay,
+    .contato-destaques,
+    .contato-conteudo,
+    .mapa {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero-contato-overlay {
+        justify-content: flex-end;
+        padding-bottom: 50px;
+    }
+
+    .hero-contato-titulo {
+        font-size: 34px;
+    }
+
+    .hero-contato-texto,
+    .card-suporte p,
+    .formulario-intro,
+    .painel-box p,
+    .painel-info p,
+    .mapa-texto p {
+        font-size: 16px;
+    }
+
+    .formulario-contato,
+    .painel-contato,
+    .mapa,
+    .card-suporte {
+        padding: 24px;
+    }
+
+    .btn-contato {
+        width: 100%;
+    }
+
+    .alinhar-suporte-footer {
+        position: static;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    footer {
+        height: auto;
+        padding: 30px 20px 40px;
+        text-align: center;
+    }
+
+    .logo-footer,
+    .copyright-footer {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .logo-footer {
+        padding-top: 0;
+    }
+
+    .copyright-footer {
+        margin-top: 30px;
+    }
 }
