@@ -38,7 +38,6 @@
     <main class="contato-page">
         <section class="hero-contato">
             <img src="img/banner-contato.png" class="banner-contato" alt="Fones e caixas de som JBL">
-            
         </section>
 
         <section class="contato-destaques">
@@ -53,6 +52,11 @@
                 <div class="icone-suporte">02</div>
                 <h2>Telefone</h2>
                 <p>Atendimento de segunda a sexta, das 9h às 18h.</p>
+                <p><script>
+                    data = new Date()
+                    diaSemana = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado")
+                    document.write(data.getHours() + ":" + data.getMinutes() + " - " + diaSemana[data.getDay()])
+                </script></p>
                 <a href="tel:+551140028922">(11) 4002-8922</a>
             </article>
 
@@ -128,8 +132,6 @@
                     <h3>Parcerias comerciais</h3>
                     <p>Consultas para eventos, revenda e projetos especiais com a marca.</p>
                 </div>
-
-             
             </aside>
         </section>
 

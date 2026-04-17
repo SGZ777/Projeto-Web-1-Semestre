@@ -271,9 +271,7 @@ iframe {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     padding: 50px 8%;
-    margin-top: -70px;
-    position: relative;
-    z-index: 2;
+    margin-top: -20px;
 }
 
 .card-suporte {
@@ -363,6 +361,7 @@ iframe {
 
 .formulario-contato {
     padding: 38px;
+    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.2);
 }
 
 .contato-form {
@@ -424,6 +423,7 @@ iframe {
     display: flex;
     flex-direction: column;
     gap: 18px;
+      box-shadow: 0 20px 32px rgba(0, 0, 0, 0.2);
 }
 
 .painel-box p,
