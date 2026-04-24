@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="img/icons/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="body-2">
+        <h1 class="title-pop" id="title-produto"></h1>
+        <img src="" id="img-produto" class="image-pop">
+        <p class="desc-pop" id="desc-produto"></p>
+        <script>
+            function capturaDados(dado){
+                urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(dado);
+            }
+
+            // Preencher os elementos com os dados capturados
+            document.getElementById("title-produto").textContent = capturaDados("produto");
+            document.getElementById("img-produto").src = capturaDados("img");
+            document.getElementById("desc-produto").textContent = capturaDados("desc");
+        </script>
+    </body>
+</html>

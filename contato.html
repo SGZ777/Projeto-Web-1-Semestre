@@ -14,7 +14,7 @@
     <title>JBL</title>
 </head>
 
-<body>
+<body class="body-1">
 
     <header>
         <div class="divHeader">
@@ -52,10 +52,10 @@
                 <div class="icone-suporte">02</div>
                 <h2>Telefone</h2>
                 <p>Atendimento de segunda a sexta, das 9h às 18h.</p>
-                <p><script>
+                <p>Horário atual: <script>
                     data = new Date()
                     diaSemana = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado")
-                    document.write(data.getHours() + ":" + data.getMinutes() + " - " + diaSemana[data.getDay()])
+                    document.write(" " + data.getHours() + ":" + data.getMinutes() + " - " + diaSemana[data.getDay()])
                 </script></p>
                 <a href="tel:+551140028922">(11) 4002-8922</a>
             </article>
@@ -124,7 +124,7 @@
                 </div>
 
                 <div class="painel-info">
-                    <h3>Suporte tecnico</h3>
+                    <h3>Suporte técnico</h3>
                     <p>Orientações sobre configuração, garantia e funcionamento dos produtos.</p>
                 </div>
 
@@ -137,7 +137,7 @@
 
         <section class="mapa">
             <div class="mapa-texto">
-                <p class="contato-section-kicker">Endereco de referência</p>
+                <p class="contato-section-kicker">Endereço de referência</p>
                 <h2>Nossa sede</h2>
             </div>
             <iframe
@@ -153,7 +153,7 @@
 
         <div class="alinhar-suporte-footer">
             <p class="txt-suporte">Precisa de suporte?</p>
-            <input class="input-footer-suporte" type="text" placeholder="Escreva sua duvida/sugestao">
+            <input class="input-footer-suporte" type="text" placeholder="Escreva sua dúvida/sugestão">
             <button class="btn-footer-suporte">Enviar</button>
         </div>
        <p class="copyright-footer">@2026 Copyright JBL</p>

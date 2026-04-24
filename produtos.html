@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icons/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JBL</title>
     <script type="text/javascript">
-        
+        function abrirDetalhes(nome, img, desc){
+            url = `pop_produtos.html?produto=${encodeURIComponent(nome)}&img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
+            window.open(url, "_blank", "width=800, height=700")
+        }
     </script>
 </head>
 
-<body>
+<body class="body-1">
     <header>
         <div class="divHeader">
             <img class="logo-header" src="img/logo.png">
@@ -38,29 +41,30 @@
     </header>
 
     <img src="img/prebanner.png">
+
 <section class="section-produtos">
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Charge 5', 'img/produtos/jblcharge5.png', 'A JBL Charge 5 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Charge 5 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblcharge5.png">
         <h1>JBL Charge 5</h1>
         <p>R$899,00</p>
         <p>10x de R$89,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Flip 6', 'img/produtos/jblflip6.jpg', 'A JBL Flip 6 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Flip 6 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblflip6.jpg">
         <h1>JBL Flip 6</h1>
         <p>R$649,00</p>
         <p>10x de R$64,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Go 3', 'img/produtos/jblgo3.jpg', 'A JBL Go 3 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Go 3 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblgo3.jpg">
         <h1>JBL Go 3</h1>
         <p>R$249,00</p>
         <p>10x de R$24,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Pulse 5', 'img/produtos/jblpulse5.png', 'A JBL Pulse 5 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Pulse 5 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblpulse5.png" style="width: 200px;">
         <h1>JBL Pulse 5</h1>
         <p>R$1.199,00</p>
@@ -70,28 +74,28 @@
 </section>
 
 <section class="section-produtos">
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Xtreme 3', 'img/produtos/jblextreme3.jpg', 'A JBL Xtreme 3 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Xtreme 3 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblextreme3.jpg">
         <h1>JBL Xtreme 3</h1>
         <p>R$1.499,00</p>
         <p>10x de R$149,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Clip 4', 'img/produtos/jblclip4.jpg', 'A JBL Clip 4 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Clip 4 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblclip4.jpg" style="width: 200px;">
         <h1>JBL Clip 4</h1>
         <p>R$329,00</p>
         <p>10x de R$32,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL PartyBox 110', 'img/produtos/jblpartybox110.png', 'A JBL PartyBox 110 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a PartyBox 110 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblpartybox110.png" style="width: 200px;">
         <h1>JBL PartyBox 110</h1>
         <p>R$2.199,00</p>
         <p>10x de R$219,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Tune 520BT', 'img/produtos/jbltune520bt.jpg', 'A JBL Tune 520BT é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Tune 520BT possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jbltune520bt.jpg" style="width: 150px;">
         <h1>JBL Tune 520BT</h1>
         <p>R$299,00</p>
@@ -101,28 +105,28 @@
 </section>
 
 <section class="ultima-section-produtos">
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Live 660NC', 'img/produtos/jbllive660nc.png', 'A JBL Live 660NC é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Live 660NC possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jbllive660nc.png" style="width: 150px;">
         <h1>JBL Live 660NC</h1>
         <p>R$799,00</p>
         <p>10x de R$79,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Wave Buds', 'img/produtos/jblwavebuds.png', 'A JBL Wave Buds é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, as Wave Buds possuem conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblwavebuds.png">
         <h1>JBL Wave Buds</h1>
         <p>R$379,00</p>
         <p>10x de R$37,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Tour One M2', 'img/produtos/jbltouronem2.png', 'A JBL Tour One M2 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Tour One M2 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jbltouronem2.png" style="width: 140px;">
         <h1>JBL Tour One M2</h1>
         <p>R$1.699,00</p>
         <p>10x de R$169,90</p>
         <button>Adicionar ao carrinho</button>
     </div>
-    <div class="produto">
+    <div class="produto" onclick="abrirDetalhes('JBL Endurance Peak 3', 'img/produtos/jblendurancepeak3.png', 'A JBL Endurance Peak 3 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Endurance Peak 3 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
         <img src="img/produtos/jblendurancepeak3.png" style="width: 250px;">
         <h1>JBL Endurance Peak 3</h1>
         <p>R$699,00</p>

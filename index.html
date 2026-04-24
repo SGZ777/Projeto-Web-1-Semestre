@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="icon" type="image/png" href="img/icons/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +12,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JBL</title>
+    <script type="text/javascript">
+        function abrirDetalhes(nome, img, desc){
+            url = `pop_produtos.html?produto=${encodeURIComponent(nome)}&img=${encodeURIComponent(img)}&desc=${encodeURIComponent(desc)}`;
+            window.open(url, "_blank", "width=800, height=700")
+        }
+    </script>
 </head>
 
-<body>
+<body class="body-1">
     <header>
         <div class="divHeader">
             <img class="logo-header" src="img/logo.png">
@@ -39,7 +45,7 @@
         <img src="img/prebanner.png">
         <img src="img/banner.png" class="banner">
         <p class="txt-promocao-home">Promoções</p>
-        <section class="produtos-home">
+        <section class="produtos-home" onclick="abrirDetalhes('JBL BoomBox 4', 'img/produto1-home.jpg', 'A JBL BoomBox 4 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a BoomBox 4 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
             <div class="produto">
                 <img src="img/produto1-home.jpg">
                 <h1>JBL BoomBox 4</h1>
@@ -47,21 +53,21 @@
                 <p>10x de R$142,00</p>
                 <button>Adicionar ao carrinho</button>
             </div>
-            <div class="produto">
+            <div class="produto" onclick="abrirDetalhes('JBL Wave Beam 2', 'img/produto2-home.jpg', 'A JBL Wave Beam 2 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Wave Beam 2 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
                 <img src="img/produto2-home.jpg" style="width: 250px; margin: 25px !important;">
                 <h1>JBL Wave Beam 2</h1>
                 <p>R$253,90</p>
                 <p>10x de R$25,30</p>
                 <button>Adicionar ao carrinho</button>
             </div>
-            <div class="produto">
+            <div class="produto" onclick="abrirDetalhes('JBL Tune 510BT', 'img/produto3-home.jpg', 'A JBL Tune 510BT é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Tune 510BT possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
                 <img src="img/produto3-home.jpg" style="width: 190px; margin: 10px;">
                 <h1>JBL Tune 510BT</h1>
                 <p>R$336,00</p>
                 <p>10x de R$36,00</p>
                 <button>Adicionar ao carrinho</button>
             </div>
-            <div class="produto">
+            <div class="produto" onclick="abrirDetalhes('JBL Go 4', 'img/produto4-home.jpg', 'A JBL Go 4 é uma caixa de som portátil e resistente à água, projetada para oferecer um som potente e de alta qualidade. Com uma bateria de longa duração, ela é ideal para festas ao ar livre e viagens, proporcionando graves profundos e agudos nítidos. Além disso, a Go 4 possui conectividade Bluetooth, permitindo que você conecte seus dispositivos sem fio e aproveite sua música em qualquer lugar.')">
                 <img src="img/produto4-home.jpg" style="width: 200px; margin-top: 20px;">
                 <h1>JBL Go 4</h1>
                 <p>R$320,50</p>
