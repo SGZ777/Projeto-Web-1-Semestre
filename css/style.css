@@ -1,3 +1,17 @@
+body{
+        animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .body-1 {
     margin: 0;
     background: linear-gradient(270deg, #ffffff, #d6d6d6, #979797);
@@ -11,6 +25,10 @@
 a {
     text-decoration: none;
     color: black;
+}
+
+img{
+       display: block;
 }
 
 header {
@@ -64,6 +82,7 @@ nav li:hover{
     margin-top: 50px;
     width: 100%;
     height: 400px;
+    
 }
 
 .ad-video{
@@ -131,6 +150,10 @@ nav li:hover{
     justify-self: center;
     font-size: 15px;
     font-family: "Oxanium", sans-serif;
+    transition: 50ms;
+}
+.produto button:hover{
+    scale: 1.03;
 }
 
 footer {
@@ -163,6 +186,10 @@ iframe {
 
 .mapa {
     text-align: center;
+    transition: 50ms;
+}
+.mapa:hover {
+    scale: 1.03;
 }
 
 .txt-suporte {
@@ -173,7 +200,7 @@ iframe {
 .input-footer-suporte {
     width: 300px;
     height: 28px;
-    border-radius: 10px;
+    border-radius: 16px;
     border: solid 1px #b4b4b4;
     padding: 10px;
 }
@@ -268,6 +295,10 @@ iframe {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.18);
     backdrop-filter: blur(10px);
     min-height: 230px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-suporte:hover {
+    scale: 1.03;
 }
 
 .icone-suporte {
@@ -349,6 +380,10 @@ iframe {
 .formulario-contato {
     padding: 38px;
     box-shadow: 0 20px 32px rgba(0, 0, 0, 0.2);
+    transition: scale 0.3s ease;
+}
+.formulario-contato:hover {
+    scale: 1.03;
 }
 
 .contato-form {
@@ -401,6 +436,10 @@ iframe {
     font-size: 18px;
     font-weight: 700;
     cursor: pointer;
+    transition: ease 0.3s;
+}
+.btn-contato:hover {
+    scale: 1.05;
 }
 
 .painel-contato {
@@ -411,6 +450,10 @@ iframe {
     flex-direction: column;
     gap: 18px;
       box-shadow: 0 20px 32px rgba(0, 0, 0, 0.2);
+      transition: scale 0.3s ease;
+}
+.painel-contato:hover {
+    scale: 1.02;
 }
 
 .painel-box p,
